@@ -1,0 +1,229 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+canvas{
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#loop{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    height: 25%;
+    width: 100%;
+    font-size: 80px;
+    white-space: nowrap;
+    background-color: #7c7c7c;
+    background-blend-mode: color-burn;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#loop>h1{
+font-weight: 500;
+animation-name: anim;
+animation-duration: 19s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+#loop>span{
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+}
+@keyframes anim{
+    0%{
+         transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 30px;
+}
+#nav>h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+#nav>a>button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-color: none;
+}
+#page>h3{
+    position: absolute;
+    top: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 3%;
+    font-weight: 400;
+    color: #7c7c7c;
+}
+#page>h4{
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #7c7c7c;
+}
+#page1>#lefttext{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+#page1>#lefttext>h1{
+    font-weight: 100;
+    color: dimgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.4;
+}
+#page1>#lefttext>h3{
+    font-weight: 100;
+    color: #7c7c7c;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 25px;
+}
+#page1>#lefttext>h2{
+    font-weight: 400;
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+#page1>#righttext{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+
+}
+#page1>#righttext>h1{
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: dimgray;
+}
+#page1>#righttext>h3{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7c7c7c;
+    line-height: 1.8;
+}
+#page2>#education{
+    position: absolute;
+    top: 20%;
+    left: 1%;
+}
+#page2>#education>h1{
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: dimgray;
+}
+#page2>#education>h2{
+    font-weight: 600;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:dimgray;
+    line-height: 1.2;
+    font-size: 20px;
+}
+#page2>#education>h3{
+      font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7c7c7c;
+    line-height: 1.8;
+}
+#page2>#hobbies{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+#page2>#hobbies>h1{
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: dimgray;
+    font-size: 60px;
+}
+#page2>#hobbies>h3{
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7c7c7c;
+    line-height: 1.8;
+}
+#page3>#contact{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#page3>#contact>h1{
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: dimgray;
+}
+#page3>#contact>h2{
+    font-weight: 600;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:dimgray;
+    line-height: 1.2;
+    font-size: 20px;
+}
+#page3>#contact>h3{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7c7c7c;
+    line-height: 1.8;
+}
+#page3>#projects{
+
+}
+
+
+
+
